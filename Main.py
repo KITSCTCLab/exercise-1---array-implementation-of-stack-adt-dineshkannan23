@@ -15,7 +15,7 @@ class Stack:
 
     def push(self, data):
         if not self.is_full():
-            s.top+=1
+            self.top+=1
             
             self.items[self.top]=data
 
