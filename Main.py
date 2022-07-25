@@ -24,7 +24,7 @@ class Stack:
     def pop(self):
         if not self.is_empty():
             if(self.top == -1): 
-            print("Stack is a Empty") 
+            print("Stack is full") 
             print("Underflow condition is occured ") 
             print("\n") 
         else:             
