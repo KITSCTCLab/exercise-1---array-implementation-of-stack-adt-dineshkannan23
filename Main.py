@@ -1,9 +1,9 @@
 import os
 class Stack:
     def __init__(self, size):
-        self.items = []
+        self.items = [none]*size
         self.size = size
-        self.top=-1
+        self.top=-1;
 
     def is_empty(self):
         return self.top==-1
@@ -11,30 +11,25 @@ class Stack:
         
 
     def is_full(self):
-        return self.top==s.n-1
+        return self.top==(self.size-1)
 
     def push(self, data):
         if not self.is_full():
-            print("STACK IS FULL")
-        else:
             s.top+=1
-            x=int(input("Enter data : "))
-            s.st[s.top]=x
+            
+            self.items[self.top]=data
 
     def pop(self):
         if not self.is_empty():
-            if(self.top == -1): 
-            print("Stack is full") 
-            print("Underflow condition is occured ") 
-            print("\n") 
-        else:             
-            self.top -= 1 
-            self.Array.pop()
+                       
+            x=self.items[self.top]
+            self.top == -1 
+            
             
 
     def status(self):
        for i in range (s.top+1):
-            print(s.st[i])
+            print(self.items[1])
 
 # Do not change the following code
 size, queries = map(int, input().rstrip().split())
